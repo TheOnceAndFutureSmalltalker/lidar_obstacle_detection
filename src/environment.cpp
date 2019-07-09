@@ -6,6 +6,8 @@
 // using templates for processPointClouds so also include .cpp to help linker
 #include "processPointClouds.cpp"
 
+// folder containing sequence of pcd files for processing
+std::string DATA_PATH = "../src/sensors/data/pcd/data_1";
 
 // tunable parameters governing cloud processing pipeline
 float FILTER_RESOLUTION = 0.25;
@@ -55,11 +57,11 @@ void process_cloud(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointC
 // read in a sequence of pcd files, identify the objects in each, and render results to screen
 int main (int argc, char** argv)
 {
-    std::cout << "starting enviroment" << std::endl;
+    std::cout << "starting enviroment" << std::endl << std::endl;
 
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
     ProcessPointClouds<pcl::PointXYZI>* pointProcessorI = new ProcessPointClouds<pcl::PointXYZI>();
-    std::vector<boost::filesystem::path> stream = pointProcessorI->streamPcd("../src/sensors/data/pcd/data_1");
+    std::vector<boost::filesystem::path> stream = pointProcessorI->streamPcd(DATA_PATH);
     auto streamIterator = stream.begin();
     pcl::PointCloud<pcl::PointXYZI>::Ptr inputCloudI;
     
