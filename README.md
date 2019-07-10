@@ -4,7 +4,7 @@ This project is an example of filtering, segmenting, clustering, and viewing lid
 
 <img src="media/ObstacleDetectionFPS.gif" width="700" height="400" />
 
-The filtering and viewing of the data is provided by the Point Cloud Library.  The segmentation, obstacle clustering, and boxing of obstacles is performed by the code in the project. 
+The filtering and viewing of the data is provided by the <a href="http://pointclouds.org/">Point Cloud Library or PCL</a>.  The segmentation, obstacle clustering, and boxing of obstacles is performed by the code in the project. 
 
 ## Dependencies and Requirements
 
@@ -15,9 +15,10 @@ The code requires the <a href="http://pointclouds.org/">Point Cloud Library or P
 
 ## Installing PCL
 
-To install the Point Cloud Library, follow the instructions below for your environment.  These instructions were copied from https://github.com/udacity/SFND_Lidar_Obstacle_Detection/edit/master/README.md.
+To install the Point Cloud Library, follow the instructions below for your environment.  These instructions were copied from https://github.com/udacity/SFND_Lidar_Obstacle_Detection/edit/master/README.md.  You may als ofind additinal installation instructions on the <a href="http://pointclouds.org/">Point Cloud Library or PCL</a> website.
 
 ### Ubuntu 
+This installation for Ubuntu is quite lengthy - up to an hour - so be patient.  Several additional dependencies, like Eigen, are installed as well.
 
 $> sudo apt install libpcl-dev
 
@@ -61,14 +62,16 @@ NOTE: very old version
 
 To acquire, compile, and run the project in Ubuntu, follow the statements below.  Windows and Mac environments should be modified accordingly.
 
+```bash
 $> git clone https://github.com/udacity/SFND_Lidar_Obstacle_Detection.git
 $> cd SFND_Lidar_Obstacle_Detection
 $> mkdir build && cd build
 $> cmake ..
 $> make
 $> ./environment
+```
 
-If all goes well, you will see a window pop up with an animation of the modified point cloud that looks similar to the graphic at the top of the readme.
+If all goes well, you will see a window pop up with an animation of the modified point cloud that looks similar to the graphic at the top of this readme.
 
 ## Discussion
 
