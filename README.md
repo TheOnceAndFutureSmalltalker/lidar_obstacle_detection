@@ -15,7 +15,7 @@ The code requires the <a href="http://pointclouds.org/">Point Cloud Library or P
 
 ## Installing PCL
 
-To install the Point Cloud Library, follow the instructions below for your environment.  These instructions were copied from https://github.com/udacity/SFND_Lidar_Obstacle_Detection/edit/master/README.md.  You may als ofind additinal installation instructions on the <a href="http://pointclouds.org/">Point Cloud Library or PCL</a> website.
+To install the Point Cloud Library, follow the instructions below for your environment.  These instructions were copied from https://github.com/udacity/SFND_Lidar_Obstacle_Detection/edit/master/README.md.  You may also find additional installation instructions on the <a href="http://pointclouds.org/">Point Cloud Library or PCL</a> website.
 
 ### Ubuntu 
 This installation for Ubuntu is quite lengthy - up to an hour - so be patient.  Several additional dependencies, like Eigen, are installed as well.
