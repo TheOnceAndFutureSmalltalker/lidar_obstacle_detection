@@ -1,6 +1,6 @@
-# Lidar Obstacle Detection
+# LiDAR Obstacle Detection
 
-This project is an example of filtering, segmenting, clustering, and viewing lidar data taken from a self-driving car.
+This project is an example of filtering, segmenting, clustering, and viewing LiDAR data taken from a self-driving ego car.
 
 <img src="media/ObstacleDetectionFPS.gif" width="700" height="400" />
 
