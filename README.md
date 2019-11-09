@@ -63,8 +63,8 @@ NOTE: very old version
 To acquire, compile, and run the project in Ubuntu, follow the statements below.  Windows and Mac environments should be modified accordingly.
 
 ```bash
-$> git clone https://github.com/udacity/SFND_Lidar_Obstacle_Detection.git
-$> cd SFND_Lidar_Obstacle_Detection
+$> git clone https://github.com/TheOnceAndFutureSmalltalker/lidar_obstacle_detection.git
+$> cd lidar_obstacle_detection
 $> mkdir build && cd build
 $> cmake ..
 $> make
