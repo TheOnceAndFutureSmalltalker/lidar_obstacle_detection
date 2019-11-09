@@ -68,11 +68,19 @@ $> cd lidar_obstacle_detection
 $> mkdir build && cd build
 $> cmake ..
 $> make
-$> ./environment
+$> ./environment 
 ```
 
 If all goes well, you will see a window pop up with an animation of the modified point cloud that looks similar to the graphic at the top of this readme.
 
 ## Discussion
 
-For a more in depth discussion ...
+This project involves a pipeline of several steps.
+
+1.  Point cloud data for a single reading is loaded from a pcd file.
+2.  Raw points are filtered into voxel grid and uninteresting parts of scan are clipped (see FilterCloud() method starting on line 24 in file processPointClouds.cpp)
+3.  This point cloud is then filtered, using RANSAC, into road point cloud and obstacles point cloud.  (see SegmentPlane() function starting on line 88 in file processPointClouds.cpp)
+4.  The obstacles point cloud is clustered into objects using KD-Tree and Euclidean Clustering (see Clustering() function starting on line 196 in file processPointClouds.cpp)
+5.  These results are then rendered to the screen
+
+These steps are performed for each lidar reading in a continuous loop until the program is stopped.
